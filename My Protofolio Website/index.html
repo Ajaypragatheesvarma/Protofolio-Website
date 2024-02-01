@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Personal Portfolio Website</title>
+    <link rel="icon" href="https://i.ibb.co/wrX3c14/website.jpg" alt="website" border="0">
+    <!-- CSS link -->
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.bgimg{
+  width: 100%;
+  height: 120vh;
+  background: url(images.jpg);
+  background-size: cover;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 108px;
+ 
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  height: -1px;
+  
+  
+}
+
+nav ul li {
+  float: left;
+  width: 125px; 
+  margin-right: 20px;
+  opacity: 0.7;
+  line-height: 40px;
+  text-align: justify;
+  font-size: 20px;
+}
+
+nav ul li a {
+  color: #1d1d24;
+  position: relative;
+  display: block;
+}
+
+nav ul li a:hover {
+  color: #fd4766;;
+}
+
+nav ul li ul li {
+  color: black;
+  height: 29px;
+  transition: 0.3s;
+  line-height: 30px;
+  text-align: justify;
+  display: none;
+}
+
+nav ul li:hover ul li {
+  display: block;
+}
+
+
+.btn {
+  color: #fff;
+  margin-top: -9px;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 15px 40px;
+  border-radius: 500px;
+  display: inline-block;
+  font-weight: 500;
+  transition: all 0.4s ease-in-out;
+  background-size: 152% 100%;
+  background: #fd4766;
+  border: 2px solid #fd4766;
+}
+
+.btn:hover {
+  background: transparent;
+  border-color: #fd4766;
+  color: #fd4766;
+}
+
+.content {
+  position: absolute;
+  top: 35%;
+  left: 8%;
+}
+
+.content .title {
+  color: #0a0a0a;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  display: inline-block;
+  margin-bottom: 20px;
+  background: linear-gradient(
+    120deg,
+    #1c99fe 20.69%,
+    #7644ff 50.19%,
+    #fd4766 79.69%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.content h1 {
+  color: #1f1f25;
+  font-size: 75px;
+  font-weight: 900;
+  line-height: 90px;
+  text-transform: inherit;
+  width: 70%;
+}
+
+.content h1 span {
+  color: #fd4766;
+}
+
+.content p {
+  width: 55%;
+  color: #202020;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="bgimg">
+      <nav>
+        <img src="https://i.ibb.co/0r5tTn9/ajayvarma.jpg" alt="ajayvarma" width="210px" height="210px" border="0px">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Skills</a>
+            <ul>
+              <li><a href="#">HTML5</a></li>
+              <li><a href="#">CSS3</a></li>
+              <li><a href="#">JavaScript</a></li>
+              <li><a href="#">React.js</a></li>
+              <li><a href="#">Python</a></li>
+              <li><a href="#">MySQL</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Porjects</a>
+            <ul>
+              <li><a href="https://c8sxk2.csb.app/">Age Calc</a></li>
+              <li><a href="https://tln8v7.csb.app/">Music Player</a></li>
+              <li><a href="https://td8dwf.csb.app/">Protofolio</a></li>
+              <li><a href="https://sl6mkh.csb.app/https://sl6mkh.csb.app/">Weather Check</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Contact</a>
+          <ul>
+            <li><a href="https://www.instagram.com/iamajaypragathees/#" target="_blank">
+              <img src="https://i.ibb.co/XVnd3qH/instagram.png" alt="instagram" border="0" width="15px" height="15px">Instagram</a></li>
+            <li><a href="https://www.linkedin.com/in/pragatheeswar-elangovan/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BgimsnykjQ%2FeOep5Z3vpYLA%3D%3D" target="_blank">
+              <img src="https://i.ibb.co/P68m2Bd/linkedin.png" alt="linkedin" border="0" width="15px" height="15px">LinkedIn</a></li>
+            <li><a href="https://www.youtube.com/channel/UCU94Q5tQIxrmnsQ19n2Skcw/" target="_blank">
+              <img src="https://i.ibb.co/sbdDRhn/youtube.png" alt="youtube" border="0" width="15px" height="15px">Youtube</a></li>
+            <li><a href="https://github.com/Ajaypragatheesvarma" target="_blank">
+              <img src="https://i.ibb.co/ctfkgbb/github.png" alt="github" border="0" width="15px" height="15px">GitHub</a></li>
+            
+        </ul>
+        </li>
+        <a href="https://i.ibb.co/RhVrvJ1/Ajay-Pragathees-Resume-12345-2-1-page-0001.jpg" target="_blank" class="btn" onclick="toggleResume()">Resume</a>
+      </nav>
+
+      <div class="content">
+        <span class="title">Entry-Level Web Developer</span>
+        <h1>Hello, I’m <span>Pragatheeswar Elangovan</span></h1>
+        <p>
+          I'm a passionate web developer with a strong foundation in front-end technologies. I specialize in creating responsive and user-friendly web applications.
+        </p>
+        <a href="https://i.ibb.co/RhVrvJ1/Ajay-Pragathees-Resume-12345-2-1-page-0001.jpg" target="_blank" class="btn" onclick="toggleResume()">Download CV</a>
+      </div>
+    </div>
+    <script>
+      function toggleResume() {
+        var content = document.querySelector('.content');
+        content.classList.toggle('show-resume');
+      }
+    </script>
+  </body>
+</html>
